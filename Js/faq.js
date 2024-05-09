@@ -10,7 +10,7 @@ questions.forEach((question) => {
     // 3. disaat button di click maka question akan toggle atau beralih
     question.classList.toggle("show")
     questions.forEach((item) => {
-          // 4. disaat item tidak sama dengan question yang telah toggle maka item akan di remove
+          // 4. jika item tidak sama dengan question yang telah toggle maka class toggle pada question akan di remove dengan parameter item
         item !== question ? item.classList.remove("show"): console.log(item)
     })
   })
